@@ -5,7 +5,7 @@ namespace GameDevToolbelt
 {
     public class ScriptableEventListener : MonoBehaviour
     {
-        public ScriptableEvent scriptableEvent;
+        [SerializeField] private ScriptableEvent scriptableEvent;
         [SerializeField] private UnityEvent listeners;
 
         private void OnEnable()
@@ -27,7 +27,7 @@ namespace GameDevToolbelt
     public abstract class ScriptableEventListener<S, T, P> : MonoBehaviour
         where S : ScriptableEvent<T, P> where T : UnityEvent<P>
     {
-        public S scriptableEvent;
+        [SerializeField] protected S scriptableEvent;
         [SerializeField] private T listeners;
 
         private void OnEnable()

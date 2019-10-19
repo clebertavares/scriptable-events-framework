@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace GameDevToolbelt
 {
-    [CreateAssetMenu(menuName = "Scriptable Events Framework/Scriptable Event")]
+    [CreateAssetMenu(menuName = "Scriptable Events/Scriptable Event")]
     public class ScriptableEvent : ScriptableObject
     {
         [SerializeField] private UnityEvent _event;
